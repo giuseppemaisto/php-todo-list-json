@@ -23,6 +23,14 @@
                 </ul>
             </div>
         </div>
+        <div class="row">
+            <div class="col-6">
+                <input type="text" v-model="language" class="form-control" placeholder="aggiungi ">
+            </div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary" @click="addToDo">aggiungi</button>
+            </div>
+        </div>
     </div>
 
 </div>

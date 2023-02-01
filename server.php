@@ -12,7 +12,13 @@
             "language" => $todo_item,
             "done" => false,
         ];
-      
+        $todo_list[] = $todo_array;
+        //Aggiungo un nuovo elemento nell'array
+        // array_push($todo_list, $todo_item);
+        //Scrivo il dato all'interno del file json
+        file_put_contents('todo-list.json', json_encode($todo_list));
+    }
+
 
       header ('content-Type: application/json');
 
